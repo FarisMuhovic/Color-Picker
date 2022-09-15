@@ -15,7 +15,7 @@ const colors = [
 
 button.addEventListener("click", function () {
   let randomNum = 0;
-  randomNum = Math.random() * colors.length;
+  randomNum = Math.random() * (colors.length - 1);
   randomNum = Math.round(randomNum);
   hexText.innerText = colors[randomNum];
   document.body.style.backgroundColor = colors[randomNum];
